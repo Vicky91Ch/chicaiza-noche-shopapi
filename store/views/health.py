@@ -7,4 +7,18 @@ from rest_framework.response import Response
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def health_check(request):
-    return Response({'status': 'ok', 'version': '1.0'})
+    return Response(
+        {'status': 'ok',
+         'Service': 'ShopApi',
+         'version': '1.0'})
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def testing_cicd(request):
+    return Response(
+        {
+        'Service': 'ShopApi',
+        'status': 'ok',
+        'version': '1.0',
+        'message': 'CI/CD Successfully',
+        })
