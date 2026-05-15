@@ -51,7 +51,7 @@ jobs:
           ALLOWED_HOSTS: localhost,127.0.0.1
           DB_NAME:       shopapi_test_db
           DB_USER:       shopapi_user
-          DB_PASSWORD:   shopapi_pass_123
+          DB_PASSWORD:   shopapi_pass
           DB_HOST:       localhost
           DB_PORT:       5432
           TEST_DB_NAME:  shopapi_test_db
